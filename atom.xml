@@ -172,9 +172,9 @@
       <category term="技术|兴趣" scheme="/categories/%E6%8A%80%E6%9C%AF-%E5%85%B4%E8%B6%A3/"/>
     
     
-      <category term="Docker" scheme="/tags/Docker/"/>
-    
       <category term="Hexo" scheme="/tags/Hexo/"/>
+    
+      <category term="Docker" scheme="/tags/Docker/"/>
     
   </entry>
   
