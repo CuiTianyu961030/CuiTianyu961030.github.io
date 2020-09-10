@@ -59,7 +59,7 @@ function bot_ui_ini() {
         end = function () {
             botui.message.add({
                 delay: 600,
-                content: "![...](/img/custom/uiemoji.jpeg)"
+                content: "![...](https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/custom/uiemoji.jpeg)"
             })
         },
         secondpart = function () {
