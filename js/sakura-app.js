@@ -432,7 +432,7 @@ function checkBgImgCookie () {
     $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
   }
   if (bgurl != '') {
-    if (bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/sakura.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/plaid.jpg' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/star.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/point.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/little-monster.png') {
+    if (bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/sakura.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/8.jpg' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/11.gif' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/6.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/13.jpg') {
       mashiro_global.variables.skinSecter = true
       mashiro_global.variables.isNight = false
       $('#night-mode-cover').css('visibility', 'hidden')
