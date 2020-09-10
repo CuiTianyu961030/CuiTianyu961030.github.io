@@ -432,7 +432,7 @@ function checkBgImgCookie () {
     $('#banner_wave_2').addClass('banner_wave_hide_fit_skin')
   }
   if (bgurl != '') {
-    if (bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/sakura.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/plaid.jpg' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/star.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/point.png' || bgurl == 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/themebg/little-monster.png') {
+    if (bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/sakura.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/plaid.jpg' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/star.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/point.png' || bgurl == 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/little-monster.png') {
       mashiro_global.variables.skinSecter = true
       mashiro_global.variables.isNight = false
       $('#night-mode-cover').css('visibility', 'hidden')
@@ -500,10 +500,10 @@ $(document).ready(function () {
     })
   }
   changeBG('#sakura-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/sakura.png')
-  changeBG('#gribs-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/plaid.jpg')
-  changeBG('#pixiv-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/star.png')
-  changeBG('#KAdots-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/point.png')
-  changeBG('#totem-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/little-monster.png')
+  changeBG('#gribs-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/8.jpg')
+  changeBG('#pixiv-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/11.gif')
+  changeBG('#KAdots-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/6.png')
+  changeBG('#totem-bg', 'https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/13.jpg')
   changeBGnoTrans('#bing-bg', 'https://api.shino.cc/bing/')
   $('.skin-menu #white-bg').click(function () {
     mashiro_global.variables.skinSecter = false
@@ -521,7 +521,7 @@ $(document).ready(function () {
   $('.skin-menu #dark-bg').click(function () {
     mashiro_global.variables.skinSecter = true
     mashiro_global.variables.isNight = true
-    $('body').css('background-image', 'url(https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/other/starry_sky.png)')
+    $('body').css('background-image', 'url(https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/themebg/10.jpg)')
     //$('body').css('background-color', 'rgba(50,54,58,1)')
     //$('body').css('color', 'rgba(190,190,190,1)')
     //$('.page').css('background-color', 'rgba(50,54,58,1)')
