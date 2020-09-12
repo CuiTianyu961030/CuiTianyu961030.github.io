@@ -1,0 +1,11 @@
+# hexo robots.txt
+User-agent: * Allow: /
+Allow: /archives/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://cuitianyu.site/sitemap.xml
+Sitemap: http://cuitianyu.site/baidusitemap.xml
