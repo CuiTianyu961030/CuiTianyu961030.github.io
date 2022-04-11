@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-04-08T05:18:51.003Z</updated>
+  <updated>2022-04-11T01:37:45.000Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「华为手机刷机方法总结」解锁获取Root权限</title>
+    <link href="/Huawei-root-20220411.html"/>
+    <id>/Huawei-root-20220411.html</id>
+    <published>2022-04-11T01:26:00.000Z</published>
+    <updated>2022-04-11T01:37:45.000Z</updated>
+    
+    <summary type="html">
+    
+      华为手机解BL锁并获取Root权限
+    
+    </summary>
+    
+      <category term="技术|爬坑" scheme="/categories/%E6%8A%80%E6%9C%AF-%E7%88%AC%E5%9D%91/"/>
+    
+    
+      <category term="Root" scheme="/tags/Root/"/>
+    
+  </entry>
   
   <entry>
     <title>「IPv6领域研究方向#02」IPv6地址生成</title>
