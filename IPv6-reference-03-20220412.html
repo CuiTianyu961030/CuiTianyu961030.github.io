@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Statistics | 冬天的雨滴 Tianyu Cui&#39;s Blog</title>
+  <title itemprop="name">「IPv6领域研究方向#03」IPv6地址关联 | 冬天的雨滴 Tianyu Cui&#39;s Blog</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/custom/favicon.ico">
   
@@ -435,257 +435,148 @@
   </div>
 </header>
 
-      <div class="pattern-center-blank">
-</div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/new_banner/statistics2.png" data-src="" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.3/img/content/post/IPv6-reference-03-20220412/banner.webp);" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.3/img/content/post/IPv6-reference-03-20220412/banner.webp">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      「IPv6领域研究方向#03」IPv6地址关联</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://github.com/cuitianyu961030">
+            <img src="/img/custom/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://github.com/cuitianyu961030">Tianyu Cui</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2022-4-12<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-        <!--<style type="text/css">
-                #contentss {
-                    position: relative;
-                    width: 800px;
-                    height: 900px;
-                    max-height: 1200px;
-                    margin-bottom: 15px;
-                    margin-top: 15px;
-                    text-align: center;
-                    border: 0;
-                    border-radius: 10px;
-                    color: rgba(0, 0, 0, .87);
-                    background: #fff 50%;
-                    background-size: cover;
-                    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
-                    margin:0 auto;
-                }
-            </style>-->
-  <header class="pattern-header ">
-    <h1 class="entry-title">
-    统计信息</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
-  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-  <h3 class="link-title"><span class="fake-title">1. 基本信息</span></h3>
-    <span id="sitetime"></span>
-    <script language=javascript>
-	function siteTime(){
-		window.setTimeout("siteTime()", 1000);
-		var seconds = 1000;
-		var minutes = seconds * 60;
-		var hours = minutes * 60;
-		var days = hours * 24;
-		var years = days * 365;
-		var today = new Date();
-		var todayYear = today.getFullYear();
-		var todayMonth = today.getMonth()+1;
-		var todayDate = today.getDate();
-		var todayHour = today.getHours();
-		var todayMinute = today.getMinutes();
-		var todaySecond = today.getSeconds();
-		/* 
-		Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-		year - 作为date对象的年份，为4位年份值
-		month - 0-11之间的整数，做为date对象的月份
-		day - 1-31之间的整数，做为date对象的天数
-		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-		minutes - 0-59之间的整数，做为date对象的分钟数
-		seconds - 0-59之间的整数，做为date对象的秒数
-		microseconds - 0-999之间的整数，做为date对象的毫秒数
-        */
-		var t1 = Date.UTC(2020,08,30,00,00,00); //北京时间2018-2-13 00:00:00
-		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-		var diff = t2-t1;
-		var diffYears = Math.floor(diff/years);
-		var diffDays = Math.floor((diff/days)-diffYears*365);
-		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-		document.getElementById("sitetime").innerHTML=" 运行时间(Running Time): 网站已在互联网海洋里漂流了 "+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒。";
-	}
-	siteTime();
-    </script>
-    <!--<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
-    <p>访问量和访客数(Page View and Unique Visitor): 
-    <span id="busuanzi_container_site_pv">
-      累积收获了 <span id="busuanzi_value_site_pv"></span> 次访问量,
-    </span>
-    <span id="busuanzi_container_site_uv">
-      共 <span id="busuanzi_value_site_uv"></span> 个小伙伴驻足。
-    </span>
-    </p>
-  <!--<h3 class="link-title"><span class="fake-title">2. 属性分配</span></h3>-->
-  <h3 class="link-title"><span class="fake-title">2. 文章统计</span></h3>
-<div id="contentss">
-<style type="text/css">
-    #posts-chart,
-    #categories-chart,
-    #tags-chart {
-        width: 100%;
-        height: 300px;
-        margin: 0.5rem auto;
-        padding: 0.5rem;
-    }
-</style>
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>「IPv6的领域研究方向」共3篇，此篇为第三篇，主要讲解IPv6地址关联的研究点和相关参考文献。</p>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>由于不像IPv4网络拥有广泛的NAT部署，在IPv6网络下地址可以轻松地被用来标识唯一用户。在早期的地址配置方案中，基于无状态自动配置（SLAAC）的IPv6地址通过使用MAC地址构造接口标识符（EUI-64），这种方法可为用户分配全球唯一的IPv6地址。但是由于嵌入了物理地址信息，攻击者可以很容易通过获取具有该物理地址的网卡厂商和设备厂商的消费记录以追踪用户身份。为了保护用户隐私，RFC4941为IPv6地址的无状态自动配置添加了隐私扩展，以通过动态生成伪随机的接口标识符以构造隐私地址（临时地址），并被推荐在一天到一周的时间里频繁变化。</p>
+<p>根据RFC 7707的测量结果表明，目前IPv6 Internet中70%的客户端正在使用隐私地址进行通信交互。隐私地址带来的IPv6客户端地址频繁变化的问题，毫无疑问给IPv6运营商或网络管理员对于网络服务的管理与评估带来了新的挑战。同时，随着服务端和用户隐私意识的提升，Internet中使用加密协议进行网络通信已成为主流，因此流量的负载加密化导致无法通过明文特征分析用户行为以标识唯一用户，用户与IPv6客户端地址的映射关系将无法验证。IPv6地址关联的目标即在频繁变化客户端地址的背景下解决地址-用户关系标识。</p>
+<h2 id="2-Motivation"><a href="#2-Motivation" class="headerlink" title="2 Motivation"></a>2 Motivation</h2><p>不像IPv4网络用户被掩盖在众多NAT地址下，IPv6包含的庞大地址空间使未来网络架构不再需要NAT部署。IPv6的零NAT架构给用户识别和追踪带来了实现的机会， 但是IPv6地址动态变化和TLS负载加密的双重压力使我们无法实现这种可能，克服IPv6网络场景下的该问题从而实现用户活动关联即是IPv6地址关联的主要动机。</p>
+<h2 id="3-Paper-List"><a href="#3-Paper-List" class="headerlink" title="3 Paper List"></a>3 Paper List</h2><p>此前并无IPv6的地址关联论文问世，相关文献主要从用户画像、TLS指纹、流序列方法三个角度出发实现用户追踪的相关工作，基于这些文章的追踪思想，我们在USENIX Security 2021发表了第一篇IPv6地址关联攻击的论文：<a href="https://www.usenix.org/conference/usenixsecurity21/presentation/cui" target="_blank" rel="noopener">SiamHAN: IPv6 Address Correlation Attacks on TLS Encrypted Traffic via Siamese Heterogeneous Graph Attention Network</a>。</p>
+<ul>
+<li>用户画像<ul>
+<li>Marek Kumpost and V ashek Matyas. User profiling and re-identification: Case of university-wide network analysis（TrustBus 2009）（利用客户端地址的所有目的IP来构建画像）</li>
+<li>Behavior-based tracking: Exploiting characteristic patterns in DNS traffic（Computer Security 2013）（客户端地址的所有DNS请求域以生成用户画像）</li>
+<li>User profiling in the time of HTTPS（IMC 2016）（利用SNI进行画像构建工作）</li>
+</ul>
+</li>
+<li>TLS指纹<ul>
+<li>Network-based HTTPS client identification using SSL/TLS fingerprinting（ARES 2015）（利用TLS指纹可以实现客户端用户代理的识别任务）</li>
+<li>OS fingerprinting: New techniques and a study of information gain and obfuscation（CNS 2017）（利用TLS指纹实现了操作系统主要版本的识别任务）</li>
+<li>Deciphering malware’s use of TLS (without decryption)（Computer Virology &amp; Hacking Techniques 2018）（基于TLS指纹的恶意软件识别任务）</li>
+</ul>
+</li>
+<li>流序列方法<ul>
+<li>DeepCorr: Strong flow correlation attacks on tor using deep learning（CCS 2018）（使用流序列来关联Tor网络用户的入口和出口流量）</li>
+<li>Practical traffic analysis attacks on secure messaging applications（NDSS 2020）（利用流序列实现了IM即时通讯应用中的频道用户的识别）</li>
+<li>FS-Net: A flow sequence network for encrypted traffic classification（INFOCOM 2019）（利用流序列可以区分用户产生的流量的应用类型）</li>
+</ul>
+</li>
+</ul>
 
-<div id="postCharts" class="post-charts">
-    <div class="title center-align" data-aos="zoom-in-up">
-    </div>
-    <div class="row">
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="posts-chart"></div>
         </div>
-
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="tags-chart"></div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="/img/custom/donate/AlipayQR.jpeg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/custom/donate/WechatQR.jpeg"></li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="categories-chart"></div>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/js/echarts.min.js"></script>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/Huawei-root-20220411.html" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.2/img/content/post/Huawei-root-20220411/banner.jpeg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.2/img/content/post/Huawei-root-20220411/banner.jpeg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                「华为手机刷机方法总结」解锁获取Root权限</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
 <script>
-    let postsChart = echarts.init(document.getElementById('posts-chart'));
-    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
-    let tagsChart = echarts.init(document.getElementById('tags-chart'));
-
-    
-
-    let postsOption = {
-        title: {
-            text: '打鱼晒网统计图（文章发布）',
-            top: 0,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'axis'
-        },
-        xAxis: {
-            type: 'category',
-            data: ["2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04"]
-        },
-        yAxis: {
-            type: 'value',
-        },
-        series: [
-            {
-                name: 'postsNumberName',
-                type: 'line',
-                color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,4],
-                markPoint: {
-                    symbolSize: 45,
-                    color: ['#fa755a','#3ecf8e','#82d3f4'],
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: 'maximum'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: 'minimum'
-                    }]
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: 'average'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    
-
-    let tagsOption = {
-        title: {
-            text: '术业专攻统计图（文章标签Top10） ',
-            top: 2,
-            x: 'center'
-        },
-        tooltip: {},
-        xAxis: [
-            {
-                type: 'category',
-                data: ["Hexo","IPv6","Docker","Root"]
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value'
-            }
-        ],
-        series: [
-            {
-                type: 'bar',
-                color: ['#82d3f4'],
-                barWidth : 18,
-                data: [8,3,1,1],
-                markPoint: {
-                    symbolSize: 45,
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: 'maximum'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: 'minimum'
-                    }],
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: 'average'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    
-
-    let categoriesOption = {
-        title: {
-            text: '分门别类统计图（文章分类）',
-            top: 1,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c} ({d}%)"
-        },
-        series: [
-            {
-                name: '分类',
-                type: 'pie',
-                radius: '50%',
-                color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"技术|兴趣","value":8},{"name":"技术|爬坑","value":1},{"name":"技术|科研","value":3}],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-    };
-
-
-    // render the charts
-    postsChart.setOption(postsOption);
-    tagsChart.setOption(tagsOption);
-    categoriesChart.setOption(categoriesOption);
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "Tq6pjBcIJTXm5mihSFv6eGjU-gzGzoHsz",
+        appKey: "2iky4IQTkNq4bssPaJ6MHOSD",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
 </script>
 
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="https://github.com/cuitianyu961030" class="profile gravatar"><img src="/img/custom/avatar.png" itemprop="image" alt="Tianyu Cui" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://github.com/cuitianyu961030" itemprop="url" rel="author">Tianyu Cui</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>Probably growing up and losing my former self.</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
-</div>
+
+
 
     </div>    
     <div class="ins-search">
