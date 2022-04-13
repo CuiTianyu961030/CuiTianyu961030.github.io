@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-04-12T02:17:06.000Z</updated>
+  <updated>2022-04-13T08:22:32.719Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「IPv6 App TLS加密流量#01」IPv6移动应用抓包总结</title>
+    <link href="/IPv6-app-01-20220413.html"/>
+    <id>/IPv6-app-01-20220413.html</id>
+    <published>2022-04-13T06:30:00.000Z</published>
+    <updated>2022-04-13T08:22:32.719Z</updated>
+    
+    <summary type="html">
+    
+      总结IPv6移动应用的流量获取方法，捕获IPv6网络下移动App产生的TLS加密流量
+    
+    </summary>
+    
+      <category term="技术|科研" scheme="/categories/%E6%8A%80%E6%9C%AF-%E7%A7%91%E7%A0%94/"/>
+    
+    
+      <category term="IPv6" scheme="/tags/IPv6/"/>
+    
+  </entry>
   
   <entry>
     <title>「IPv6领域研究方向#03」IPv6地址关联</title>
@@ -252,9 +272,9 @@
       <category term="技术|兴趣" scheme="/categories/%E6%8A%80%E6%9C%AF-%E5%85%B4%E8%B6%A3/"/>
     
     
-      <category term="Docker" scheme="/tags/Docker/"/>
-    
       <category term="Hexo" scheme="/tags/Hexo/"/>
+    
+      <category term="Docker" scheme="/tags/Docker/"/>
     
   </entry>
   
