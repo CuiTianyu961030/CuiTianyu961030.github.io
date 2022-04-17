@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-04-13T08:22:32.719Z</updated>
+  <updated>2022-04-17T02:53:22.291Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「IPv6 App TLS加密流量#02」IPv6加密移动应用分析</title>
+    <link href="/IPv6-app-02-20220417.html"/>
+    <id>/IPv6-app-02-20220417.html</id>
+    <published>2022-04-17T02:37:00.000Z</published>
+    <updated>2022-04-17T02:53:22.291Z</updated>
+    
+    <summary type="html">
+    
+      分析和总结国内IPv6移动应用的部署和使用情况，包括淘宝，京东等已支持IPv6网络的移动App
+    
+    </summary>
+    
+      <category term="技术|科研" scheme="/categories/%E6%8A%80%E6%9C%AF-%E7%A7%91%E7%A0%94/"/>
+    
+    
+      <category term="IPv6" scheme="/tags/IPv6/"/>
+    
+  </entry>
   
   <entry>
     <title>「IPv6 App TLS加密流量#01」IPv6移动应用抓包总结</title>
