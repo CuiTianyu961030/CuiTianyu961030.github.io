@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">「IPv6 App TLS加密流量#02」IPv6加密移动应用分析 | 冬天的雨滴 Tianyu Cui&#39;s Blog</title>
+  <title itemprop="name">「讨论班论文阅读分享#01」Gasser et al. IMC 2018 | 冬天的雨滴 Tianyu Cui&#39;s Blog</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/custom/favicon.ico">
   
@@ -441,11 +441,11 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/IPv6-app-02-20220417/banner.png);" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/IPv6-app-02-20220417/banner.png">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/banner.png);" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/banner.png">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      「IPv6 App TLS加密流量#02」IPv6加密移动应用分析</h1>
+      「讨论班论文阅读分享#01」Gasser et al. IMC 2018</h1>
       <p class="entry-census">
         <span>
           <a href="https://github.com/cuitianyu961030">
@@ -457,7 +457,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2022-4-17<span class="bull">
+        2022-4-20<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -471,51 +471,8 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于国内IPv6还没有做到完全部署，目前国内APP应用虽支持IPv6使用，但使用效果并不良好，几乎所有的APP其虽声称支持IPv6网络但其功能并不能加载完全，怀疑其资源仍旧多搭载在IPv4服务器或CDN之上。大多数APP甚至无法产生IPv6主要通信流量。这里总结能够产生加密流量的十种APP应用。</p>
-<h2 id="1-十种IPv6加密应用"><a href="#1-十种IPv6加密应用" class="headerlink" title="1 十种IPv6加密应用"></a>1 十种IPv6加密应用</h2><ul>
-<li>淘宝</li>
-<li>京东</li>
-<li>美团</li>
-<li>百度</li>
-<li>百度地图</li>
-<li>迅雷</li>
-<li>新浪微博</li>
-<li>爱奇艺</li>
-<li>优酷</li>
-<li>腾讯视频</li>
-</ul>
-<p>除以上10种应用之外，本调研还测试了其它国内应用包括<code>携程旅行</code>，<code>苏宁易购</code>，<code>支付宝</code>，<code>网易云音乐</code>，<code>QQ</code>，<code>今日头条</code>。但结果证明其他应用不能够在IPv6网络中完成基础功能的使用，导致无法产生加密流量。</p>
-<h2 id="2-具体结果"><a href="#2-具体结果" class="headerlink" title="2 具体结果"></a>2 具体结果</h2><h4 id="淘宝"><a href="#淘宝" class="headerlink" title="淘宝"></a>淘宝</h4><p>淘宝app在使用中产生了大量的SSL/TLS流量，但明显其商品图片未能加载完毕，仅能进行简单的搜索和浏览功能，怀疑目前阶段淘宝的大量图片等资源仍放置在IPv4服务器或CDN之上。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/1.png" alt="image-20190906131119273"></p>
-<p>尽管IPv6网络下淘宝app功能无法完全使用，但仍旧产生大量SSL/TLS加密流量。证明淘宝使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/2.png" alt="image-20190906131245440"></p>
-<h4 id="京东"><a href="#京东" class="headerlink" title="京东"></a>京东</h4><p>京东能够进行基本的商品浏览和查看，唯一不能加载图片资源，使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/3.png" alt="image-20190906131043874"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/4.png" alt="image-20190906131326756"></p>
-<h4 id="美团"><a href="#美团" class="headerlink" title="美团"></a>美团</h4><p>美团只能完成基础的浏览过程，其他功能基本无法使用，使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/5.png" alt="image-20190906131420841"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/6.png" alt="image-20190906131407954"></p>
-<h4 id="百度"><a href="#百度" class="headerlink" title="百度"></a>百度</h4><p>百度搜索能够正常访问IPv6网站，其IPv4资源无法加载，使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/7.png" alt="image-20190906133620448"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/8.png" alt="image-20190906133646302"></p>
-<h4 id="百度地图"><a href="#百度地图" class="headerlink" title="百度地图"></a>百度地图</h4><p>百度地图的定位功能无法使用，导致无法完成基本的导航任务，但在使用过程中产生了IPv6加密流量，使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/9.png" alt="image-20190906133411922"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/10.png" alt="image-20190906133717146"></p>
-<h4 id="迅雷"><a href="#迅雷" class="headerlink" title="迅雷"></a>迅雷</h4><p>迅雷app内提供的其他服务如直播等都无法访问，但在使用过程中仍产生了加密流量，使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/11.png" alt="image-20190906133349302"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/12.png" alt="image-20190906133752202"></p>
-<h4 id="新浪微博"><a href="#新浪微博" class="headerlink" title="新浪微博"></a>新浪微博</h4><p>新浪微博基本搜索功能也都无法使用，但在使用过程中同样产生了加密流量，使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/13.png" alt="image-20190906133422693"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/14.png" alt="image-20190906133832255"></p>
-<h4 id="爱奇艺"><a href="#爱奇艺" class="headerlink" title="爱奇艺"></a>爱奇艺</h4><p>视频软件爱奇艺能够正常加载app框架和文字资源，但其视频资源和图片资源无法加载，怀疑其视频图片仅存储在IPv4服务器或CDN之上，无法提供IPv6视频服务。在通信过程中也产生了IPv6加密流量。使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/15.png" alt="image-20190906133440522"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/16.png" alt="image-20190906133859588"></p>
-<h4 id="优酷"><a href="#优酷" class="headerlink" title="优酷"></a>优酷</h4><p>优酷相比爱奇艺，在IPv6环境下其能够加载图片资源，但视频资源仍旧无法播放。产生大量SSL/TLS加密流量，使用SSL/TLS加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/17.png" alt="image-20190906133454039"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/18.png" alt="image-20190906133939254"></p>
-<h4 id="腾讯视频"><a href="#腾讯视频" class="headerlink" title="腾讯视频"></a>腾讯视频</h4><p>腾讯视频相比于爱奇艺和优酷，其基本资源都无法加载，但在使用过程中仍旧产生了加密流量，使用SSL/TLS进行加密通信。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/19.png" alt="image-20190906133524912"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.5/img/content/post/IPv6-app-02-20220417/20.png" alt="image-20190906134015960"></p>
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文是Gasser等人发表在IMC 2018的一篇提供IPv6活跃地址的公开数据集的代表性工作，从公开数据集中收集全面的可扫描列表（域名、Traceroute数据），通过持续扫描提供不断更新的活跃地址集，将IPv6目标列表从数量推向质量。</p>
+<h2 id="1-PPT分享"><a href="#1-PPT分享" class="headerlink" title="1 PPT分享"></a>1 PPT分享</h2><p><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/1.png" alt="1"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/2.png" alt="2"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/3.png" alt="3"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/4.png" alt="4"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/5.png" alt="5"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/6.png" alt="6"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/7.png" alt="7"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/8.png" alt="8"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/9.png" alt="9"><br><img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/10.png" alt="10"></p>
 
         </div>
         <!-- .entry-content -->
@@ -544,36 +501,19 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/Paper-ClusterGasser-20220420.html" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/banner.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/Paper-ClusterGasser-20220420/banner.png">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                「讨论班论文阅读分享#01」Gasser et al. IMC 2018</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/IPv6-app-01-20220413.html" rel="next">
+            <a href="/IPv6-app-02-20220417.html" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.4/img/content/post/IPv6-app-01-20220413/banner.jpeg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.4/img/content/post/IPv6-app-01-20220413/banner.jpeg">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/IPv6-app-02-20220417/banner.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.0.6/img/content/post/IPv6-app-02-20220417/banner.png">
               </div>
               <span class="label">
               Previous Post</span>
               <div class="info">
                 <h3>
-                「IPv6 App TLS加密流量#01」IPv6移动应用抓包总结</h3>
+                「IPv6 App TLS加密流量#02」IPv6加密移动应用分析</h3>
                 <hr>
               </div>
             </a>
