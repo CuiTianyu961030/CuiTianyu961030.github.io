@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/Paper-TowardsSong-20220423.html</loc>
+    
+    <lastmod>2022-04-23T05:51:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/Paper-ClusterGasser-20220420.html</loc>
     
     <lastmod>2022-04-20T08:46:14.006Z</lastmod>
@@ -177,7 +184,7 @@
   </url>
   
   <url>
-    <loc>/rss/index.html</loc>
+    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
@@ -185,6 +192,13 @@
   
   <url>
     <loc>/lab/index.html</loc>
+    
+    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
@@ -199,13 +213,6 @@
   
   <url>
     <loc>/video/index.html</loc>
-    
-    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
