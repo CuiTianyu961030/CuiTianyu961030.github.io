@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-04-23T05:51:25.000Z</updated>
+  <updated>2022-04-25T11:49:35.000Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「讨论班论文阅读分享#03」Borgolte et al. S&amp;P 2018</title>
+    <link href="/Paper-EnumeratingBorgolte-20220425.html"/>
+    <id>/Paper-EnumeratingBorgolte-20220425.html</id>
+    <published>2022-04-25T11:13:00.000Z</published>
+    <updated>2022-04-25T11:49:35.000Z</updated>
+    
+    <summary type="html">
+    
+      讨论班论文阅读ppt分享：Enumerating Active IPv6 Hosts for Large-scale Security Scans via DNSSEC-signed Reverse Zones.
+    
+    </summary>
+    
+      <category term="笔记|学术" scheme="/categories/%E7%AC%94%E8%AE%B0-%E5%AD%A6%E6%9C%AF/"/>
+    
+    
+      <category term="IPv6" scheme="/tags/IPv6/"/>
+    
+  </entry>
   
   <entry>
     <title>「讨论班论文阅读分享#02」Song et al. IWQoS 2020</title>
