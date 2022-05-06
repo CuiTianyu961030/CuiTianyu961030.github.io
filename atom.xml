@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-04-27T15:49:18.000Z</updated>
+  <updated>2022-05-05T16:31:00.000Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图神经网络综述 GCN、GraphSAGE、GAT、GAE、ARGA</title>
+    <link href="/Knowledge-graph-20220505.html"/>
+    <id>/Knowledge-graph-20220505.html</id>
+    <published>2022-05-05T15:58:00.000Z</published>
+    <updated>2022-05-05T16:31:00.000Z</updated>
+    
+    <summary type="html">
+    
+      图神经网络的快速回顾，包括五种典型GNN模型：GCN、GraphSAGE、GAT、GAE、ARGA
+    
+    </summary>
+    
+      <category term="笔记|知识" scheme="/categories/%E7%AC%94%E8%AE%B0-%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="GNNs" scheme="/tags/GNNs/"/>
+    
+  </entry>
   
   <entry>
     <title>「Leetcode 307」线段树</title>

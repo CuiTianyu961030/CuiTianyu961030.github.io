@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>/Knowledge-graph-20220505.html</loc>
+    <lastmod>2022-05-05</lastmod>
+  </url>
+  <url>
     <loc>/Leetcode-307-20220427.html</loc>
     <lastmod>2022-04-27</lastmod>
   </url>
