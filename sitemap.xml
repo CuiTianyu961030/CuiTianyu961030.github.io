@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/Knowledge-kg-20220507.html</loc>
+    
+    <lastmod>2022-05-07T15:36:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/links/index.html</loc>
     
-    <lastmod>2022-05-06T12:06:17.869Z</lastmod>
+    <lastmod>2022-05-06T12:07:39.632Z</lastmod>
     
   </url>
   
@@ -226,14 +233,14 @@
   </url>
   
   <url>
-    <loc>/video/index.html</loc>
+    <loc>/tags/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>/video/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-05-05T16:31:00.000Z</updated>
+  <updated>2022-05-07T15:36:49.000Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>知识图谱（Knowledge Graph）简单综述</title>
+    <link href="/Knowledge-kg-20220507.html"/>
+    <id>/Knowledge-kg-20220507.html</id>
+    <published>2022-05-07T15:33:00.000Z</published>
+    <updated>2022-05-07T15:36:49.000Z</updated>
+    
+    <summary type="html">
+    
+      知识图谱的快速回顾，包括信息抽取、信息融合、信息存储、知识推理等
+    
+    </summary>
+    
+      <category term="笔记|知识" scheme="/categories/%E7%AC%94%E8%AE%B0-%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Knowledge Graph" scheme="/tags/Knowledge-Graph/"/>
+    
+  </entry>
   
   <entry>
     <title>图神经网络综述 GCN、GraphSAGE、GAT、GAE、ARGA</title>
