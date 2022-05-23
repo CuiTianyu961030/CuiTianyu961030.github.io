@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-05-07T15:36:49.000Z</updated>
+  <updated>2022-05-23T16:47:49.000Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>强化学习（Reinforcement Learning）简单综述</title>
+    <link href="/Knowledge-rl-20220523.html"/>
+    <id>/Knowledge-rl-20220523.html</id>
+    <published>2022-05-23T15:14:00.000Z</published>
+    <updated>2022-05-23T16:47:49.000Z</updated>
+    
+    <summary type="html">
+    
+      强化学习的快速回顾，包括策略梯度、蒙特卡洛树搜索、Q-learning、Actor-Critic等
+    
+    </summary>
+    
+      <category term="笔记|知识" scheme="/categories/%E7%AC%94%E8%AE%B0-%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="Reinforcement Learning" scheme="/tags/Reinforcement-Learning/"/>
+    
+  </entry>
   
   <entry>
     <title>知识图谱（Knowledge Graph）简单综述</title>
@@ -391,28 +411,6 @@
     
       <category term="技术|兴趣" scheme="/categories/%E6%8A%80%E6%9C%AF-%E5%85%B4%E8%B6%A3/"/>
     
-    
-      <category term="Hexo" scheme="/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「Hexo博客搭建」Docker-Hexo搭建属于你自己的博客</title>
-    <link href="/Hexo-Docker-build-20200830.html"/>
-    <id>/Hexo-Docker-build-20200830.html</id>
-    <published>2020-08-30T04:57:01.000Z</published>
-    <updated>2020-09-09T14:59:55.143Z</updated>
-    
-    <summary type="html">
-    
-      Docker+Hexo快速搭建博客教程
-    
-    </summary>
-    
-      <category term="技术|兴趣" scheme="/categories/%E6%8A%80%E6%9C%AF-%E5%85%B4%E8%B6%A3/"/>
-    
-    
-      <category term="Docker" scheme="/tags/Docker/"/>
     
       <category term="Hexo" scheme="/tags/Hexo/"/>
     
