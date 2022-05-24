@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/Scholar-conftime-20220524.html</loc>
+    
+    <lastmod>2022-05-24T16:15:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/Knowledge-rl-20220523.html</loc>
     
     <lastmod>2022-05-23T16:47:49.000Z</lastmod>
@@ -226,14 +233,14 @@
   </url>
   
   <url>
-    <loc>/rss/index.html</loc>
+    <loc>/tags/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
