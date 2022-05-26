@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/Knowledge-lm-20220526.html</loc>
+    
+    <lastmod>2022-05-26T16:09:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/Scholar-conftime-20220524.html</loc>
     
     <lastmod>2022-05-24T16:15:54.000Z</lastmod>
@@ -226,6 +233,20 @@
   </url>
   
   <url>
+    <loc>/lab/index.html</loc>
+    
+    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/rss/index.html</loc>
+    
+    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/client/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
@@ -240,21 +261,7 @@
   </url>
   
   <url>
-    <loc>/rss/index.html</loc>
-    
-    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/video/index.html</loc>
-    
-    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/lab/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
