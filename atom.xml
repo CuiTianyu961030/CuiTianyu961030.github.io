@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-05-26T16:09:57.000Z</updated>
+  <updated>2022-05-31T16:01:41.000Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TensorFlow与PyTorch的交叉熵函数区别</title>
+    <link href="/Debug-tensorflow-pytorch-20220531.html"/>
+    <id>/Debug-tensorflow-pytorch-20220531.html</id>
+    <published>2022-05-31T15:18:00.000Z</published>
+    <updated>2022-05-31T16:01:41.000Z</updated>
+    
+    <summary type="html">
+    
+      TensorFlow和PyTorch的全连接写法对比，交叉熵函数的爬坑记录
+    
+    </summary>
+    
+      <category term="技术|爬坑" scheme="/categories/%E6%8A%80%E6%9C%AF-%E7%88%AC%E5%9D%91/"/>
+    
+    
+      <category term="TensorFlow, PyTorch" scheme="/tags/TensorFlow-PyTorch/"/>
+    
+  </entry>
   
   <entry>
     <title>NLP语言模型（Language Model）</title>
@@ -386,26 +406,6 @@
     <summary type="html">
     
       Hexo-Sakura创建图书馆展览页以作为自己的学习计划书签库
-    
-    </summary>
-    
-      <category term="技术|兴趣" scheme="/categories/%E6%8A%80%E6%9C%AF-%E5%85%B4%E8%B6%A3/"/>
-    
-    
-      <category term="Hexo" scheme="/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「Sakura主题美化与修改#02」Hexo-Sakura主题全站字体更换和修复分类页文章图片压缩</title>
-    <link href="/Sakura-config-font-and-category-img-20200901.html"/>
-    <id>/Sakura-config-font-and-category-img-20200901.html</id>
-    <published>2020-09-01T13:20:15.000Z</published>
-    <updated>2020-09-09T14:43:52.868Z</updated>
-    
-    <summary type="html">
-    
-      Hexo-Sakura主题全站字体更换以及修复分类页的文章小图标压缩变形的问题
     
     </summary>
     
