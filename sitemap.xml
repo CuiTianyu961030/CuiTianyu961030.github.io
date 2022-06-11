@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/Knowledge-IPv6-tunnel-20220611.html</loc>
+    
+    <lastmod>2022-06-11T13:57:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/Debug-tensorflow-pytorch-20220531.html</loc>
     
     <lastmod>2022-05-31T16:01:41.000Z</lastmod>
@@ -247,13 +254,6 @@
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
-    
-    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
@@ -261,14 +261,21 @@
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>/video/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/video/index.html</loc>
+    <loc>/client/index.html</loc>
+    
+    <lastmod>2020-03-16T10:41:30.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/tags/index.html</loc>
     
     <lastmod>2020-03-16T10:41:30.000Z</lastmod>
     
