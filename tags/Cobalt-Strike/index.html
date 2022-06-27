@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Statistics | 冬天的雨滴 Tianyu Cui&#39;s Blog</title>
+  <title itemprop="name">Tag: Cobalt Strike | 冬天的雨滴 Tianyu Cui&#39;s Blog</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/custom/favicon.ico">
   
@@ -435,258 +435,63 @@
   </div>
 </header>
 
-      <div class="pattern-center-blank">
-</div>
+      
+<div class="pattern-center-blank"></div>
 <div class="pattern-center ">
   <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/new_banner/statistics2.png" data-src="" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    <img src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@1.3/img/loader/orange.progress-bar-stripe-loader.svg" data-src="Cobalt Strike.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
-        <!--<style type="text/css">
-                #contentss {
-                    position: relative;
-                    width: 800px;
-                    height: 900px;
-                    max-height: 1200px;
-                    margin-bottom: 15px;
-                    margin-top: 15px;
-                    text-align: center;
-                    border: 0;
-                    border-radius: 10px;
-                    color: rgba(0, 0, 0, .87);
-                    background: #fff 50%;
-                    background-size: cover;
-                    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
-                    margin:0 auto;
-                }
-            </style>-->
   <header class="pattern-header ">
-    <h1 class="entry-title">
-    统计信息</h1>
+    <h1 class="cat-title">Cobalt Strike</h1>
   </header>
 </div>
 <div id="content" class="site-content">
-  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-  <h3 class="link-title"><span class="fake-title">1. 基本信息</span></h3>
-    <span id="sitetime"></span>
-    <script language=javascript>
-	function siteTime(){
-		window.setTimeout("siteTime()", 1000);
-		var seconds = 1000;
-		var minutes = seconds * 60;
-		var hours = minutes * 60;
-		var days = hours * 24;
-		var years = days * 365;
-		var today = new Date();
-		var todayYear = today.getFullYear();
-		var todayMonth = today.getMonth()+1;
-		var todayDate = today.getDate();
-		var todayHour = today.getHours();
-		var todayMinute = today.getMinutes();
-		var todaySecond = today.getSeconds();
-		/* 
-		Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-		year - 作为date对象的年份，为4位年份值
-		month - 0-11之间的整数，做为date对象的月份
-		day - 1-31之间的整数，做为date对象的天数
-		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-		minutes - 0-59之间的整数，做为date对象的分钟数
-		seconds - 0-59之间的整数，做为date对象的秒数
-		microseconds - 0-999之间的整数，做为date对象的毫秒数
-        */
-		var t1 = Date.UTC(2020,08,30,00,00,00); //北京时间2018-2-13 00:00:00
-		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-		var diff = t2-t1;
-		var diffYears = Math.floor(diff/years);
-		var diffDays = Math.floor((diff/days)-diffYears*365);
-		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-		document.getElementById("sitetime").innerHTML=" 运行时间(Running Time): 网站已在互联网海洋里漂流了 "+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒。";
-	}
-	siteTime();
-    </script>
-    <!--<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
-    <p>访问量和访客数(Page View and Unique Visitor): 
-    <span id="busuanzi_container_site_pv">
-      累积收获了 <span id="busuanzi_value_site_pv"></span> 次访问量,
-    </span>
-    <span id="busuanzi_container_site_uv">
-      共 <span id="busuanzi_value_site_uv"></span> 个小伙伴驻足。
-    </span>
-    </p>
-  <!--<h3 class="link-title"><span class="fake-title">2. 属性分配</span></h3>-->
-  <h3 class="link-title"><span class="fake-title">2. 文章统计</span></h3>
-<div id="contentss">
-<style type="text/css">
-    #posts-chart,
-    #categories-chart,
-    #tags-chart {
-        width: 100%;
-        height: 300px;
-        margin: 0.5rem auto;
-        padding: 0.5rem;
-        position: relative;
-    }
-</style>
-
-<div id="postCharts" class="post-charts">
-    <div class="title center-align" data-aos="zoom-in-up">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      
+  <!-- 首页默认取最最新文章集 -->
+  
+    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/Knowledge-CobaltStrike-20220627.html">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
+        </div>
+        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/CuiTianyu961030/CDN@v2.1.8/img/content/post/Knowledge-CobaltStrike-20220627/banner.webg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
     </div>
-    <div class="row">
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="posts-chart"></div>
-        </div>
+    <h1 class="entry-title">
+    <a href="/Knowledge-CobaltStrike-20220627.html">
+    Cobalt Strike知识简介</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2022-6-27</div>
+    <p>
+    Cobalt Strike的C/S架构、C2通道、Beacon通信模式、域前置技术等</p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/Knowledge-CobaltStrike-20220627.html">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
 
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="tags-chart"></div>
-        </div>
 
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="categories-chart"></div>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/js/echarts.min.js"></script>
-<script>
-    let postsChart = echarts.init(document.getElementById('posts-chart'));
-    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
-    let tagsChart = echarts.init(document.getElementById('tags-chart'));
-
+      <div class="clearer">
+      </div>
+    </main>
+    <!--  -->
     
-
-    let postsOption = {
-        title: {
-            text: '打鱼晒网统计图（文章发布）',
-            top: 0,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'axis'
-        },
-        xAxis: {
-            type: 'category',
-            data: ["2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06"]
-        },
-        yAxis: {
-            type: 'value',
-        },
-        series: [
-            {
-                name: 'postsNumberName',
-                type: 'line',
-                color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,10,6,3],
-                markPoint: {
-                    symbolSize: 45,
-                    color: ['#fa755a','#3ecf8e','#82d3f4'],
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: 'maximum'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: 'minimum'
-                    }]
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: 'average'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    
-
-    let tagsOption = {
-        title: {
-            text: '术业专攻统计图（文章标签Top10） ',
-            top: 2,
-            x: 'center'
-        },
-        tooltip: {},
-        xAxis: [
-            {
-                type: 'category',
-                data: ["Hexo","IPv6","GNNs","TensorFlow, PyTorch","Docker","Cobalt Strike","QUIC","Root","Knowledge Graph","算法"]
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value'
-            }
-        ],
-        series: [
-            {
-                type: 'bar',
-                color: ['#82d3f4'],
-                barWidth : 18,
-                data: [8,8,1,1,1,1,1,1,1,1],
-                markPoint: {
-                    symbolSize: 45,
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: 'maximum'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: 'minimum'
-                    }],
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: 'average'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    
-
-    let categoriesOption = {
-        title: {
-            text: '分门别类统计图（文章分类）',
-            top: 1,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c} ({d}%)"
-        },
-        series: [
-            {
-                name: '分类',
-                type: 'pie',
-                radius: '50%',
-                color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"技术|爬坑","value":2},{"name":"技术|兴趣","value":8},{"name":"技术|科研","value":5},{"name":"笔记|知识","value":8},{"name":"笔记|学术","value":4}],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-    };
-
-
-    // render the charts
-    postsChart.setOption(postsOption);
-    tagsChart.setOption(tagsOption);
-    categoriesChart.setOption(categoriesOption);
-</script> 
-
-
-</div>
+  </div>
 </div>
 
     </div>    
